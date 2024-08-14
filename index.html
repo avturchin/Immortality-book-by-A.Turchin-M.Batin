@@ -3,94 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бессмертие - Содержание</title>
+    <title>Бессмертие - А.Турчин, М.Батин</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
         
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #f9f9f9;
+            color: #333;
         }
         .container {
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            padding: 40px;
             max-width: 800px;
-            width: 90%;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
         h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
             text-align: center;
-            color: #2c3e50;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-bottom: 0.2em;
+            color: #000;
+            letter-spacing: -1px;
         }
         h2 {
-            text-align: center;
-            color: #34495e;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
             font-size: 1.5em;
-            margin-bottom: 30px;
+            text-align: center;
+            margin-bottom: 0.5em;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .authors {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 2em;
+            color: #444;
+        }
+        .legend {
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 2em;
+            color: #666;
+            font-style: italic;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
+            margin-bottom: 1.5em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5em;
         }
-        li:hover {
-            transform: translateX(10px);
+        li:last-child {
+            border-bottom: none;
         }
         a {
             text-decoration: none;
-            color: #3498db;
-            font-weight: 400;
+            color: #000;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
+            align-items: baseline;
             transition: all 0.3s ease;
         }
         a:hover {
-            background-color: #3498db;
-            color: white;
+            color: #2c3e50;
+        }
+        .chapter {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        .title {
+            font-weight: 300;
+            margin-left: 1em;
         }
         .progress {
             font-size: 0.9em;
-            color: #27ae60;
-            transition: all 0.3s ease;
+            font-weight: 700;
+            color: #3498db;
         }
-        a:hover .progress {
-            color: #ecf0f1;
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3em;
+            }
+            a {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .title {
+                margin-left: 0;
+                margin-top: 0.5em;
+            }
+            .progress {
+                margin-top: 0.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Бессмертие</h1>
+        <div class="authors">А.Турчин, М.Батин</div>
         <h2>Содержание</h2>
+        <div class="legend">Проценты указывают на готовность каждой главы</div>
         <ul>
-            <li><a href="chapter1.pdf">Глава 1. Неприемлемость смерти <span class="progress">100%</span></a></li>
-            <li><a href="chapter2.pdf">Глава 2. Что такое бессмертие? <span class="progress">90%</span></a></li>
-            <li><a href="chapter3.pdf">Глава 3. Когнитивные искажения в мышлении о смерти и бессмертии <span class="progress">85%</span></a></li>
-            <li><a href="chapter4.pdf">Глава 4. Что есть «я»? О природе сознания <span class="progress">80%</span></a></li>
-            <li><a href="chapter5.pdf">Глава 5. Об идентичности копий: основная проблема в теории бессмертия <span class="progress">75%</span></a></li>
-            <li><a href="chapter6.pdf">Глава 6. Бессмертие и глобальные катастрофы <span class="progress">70%</span></a></li>
-            <li><a href="chapter7.pdf">Глава 7. Бессмертие и Doomsday argument: логические парадоксы вечной жизни <span class="progress">65%</span></a></li>
-            <li><a href="chapter8.pdf">Глава 8. Восприятие образа бессмертия – бессмертие в кино, литературе и искусстве <span class="progress">60%</span></a></li>
-            <li><a href="chapter9.pdf">Глава 9. Карта будущего <span class="progress">55%</span></a></li>
+            <li>
+                <a href="chapter1.pdf">
+                    <span><span class="chapter">Глава 1.</span> <span class="title">Неприемлемость смерти</span></span>
+                    <span class="progress">100%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter2.pdf">
+                    <span><span class="chapter">Глава 2.</span> <span class="title">Что такое бессмертие?</span></span>
+                    <span class="progress">90%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter3.pdf">
+                    <span><span class="chapter">Глава 3.</span> <span class="title">Когнитивные искажения в мышлении о смерти и бессмертии</span></span>
+                    <span class="progress">85%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter4.pdf">
+                    <span><span class="chapter">Глава 4.</span> <span class="title">Что есть «я»? О природе сознания</span></span>
+                    <span class="progress">80%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter5.pdf">
+                    <span><span class="chapter">Глава 5.</span> <span class="title">Об идентичности копий: основная проблема в теории бессмертия</span></span>
+                    <span class="progress">75%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter6.pdf">
+                    <span><span class="chapter">Глава 6.</span> <span class="title">Бессмертие и глобальные катастрофы</span></span>
+                    <span class="progress">70%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter7.pdf">
+                    <span><span class="chapter">Глава 7.</span> <span class="title">Бессмертие и Doomsday argument: логические парадоксы вечной жизни</span></span>
+                    <span class="progress">65%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter8.pdf">
+                    <span><span class="chapter">Глава 8.</span> <span class="title">Восприятие образа бессмертия – бессмертие в кино, литературе и искусстве</span></span>
+                    <span class="progress">60%</span>
+                </a>
+            </li>
+            <li>
+                <a href="chapter9.pdf">
+                    <span><span class="chapter">Глава 9.</span> <span class="title">Карта будущего</span></span>
+                    <span class="progress">55%</span>
+                </a>
+            </li>
         </ul>
     </div>
 </body>
